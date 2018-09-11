@@ -1,3 +1,6 @@
+/* Ernest: increased heap size to 16MiB */
+_HEAP_SIZE = 0x1000000;
+
 /*******************************************************************/
 /*                                                                 */
 /* V5 SDK linker script v1.00                                      */

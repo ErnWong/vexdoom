@@ -7,13 +7,15 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <errno.h>
-#include <SDL.h>
+#include <string.h>
+#include "api.h"
 #include "doom/doomtype.h"
 #include "doom/doomdef.h"
 #include "doom/m_fixed.h"
 #include "doom/d_main.h"
 #include "doom/i_video.h"
 #include "doom/i_system.h"
+#include "doom/i_sound.h"
 
 #define MAX_MESSAGE_SIZE                1024
 
@@ -48,9 +50,12 @@ void I_Init(void)
 void I_Exit(int rc)
 {
 
-    SDL_CloseAudio();
-    SDL_Quit();
-    exit(rc);
+    printf("[INFO ] Program has terminated.\n");
+    while (true)
+    {
+        // Idle loop. Flushes any messages.
+        delay(1000);
+    }
 
 }
 
@@ -59,7 +64,7 @@ void I_Print(const char *s, ...)
 
     char msg[MAX_MESSAGE_SIZE];
     va_list v;
- 
+
     va_start(v, s);
     vsnprintf(msg, sizeof (msg), s, v);
     va_end(v);
@@ -87,7 +92,7 @@ boolean I_StartDisplay(void)
     if (InDisplay)
         return false;
 
-    start_displaytime = SDL_GetTicks();
+    start_displaytime = millis();
     InDisplay = true;
 
     return true;
@@ -97,7 +102,7 @@ boolean I_StartDisplay(void)
 void I_EndDisplay(void)
 {
 
-    displaytime = SDL_GetTicks() - start_displaytime;
+    displaytime = millis() - start_displaytime;
     InDisplay = false;
 
 }
@@ -105,14 +110,14 @@ void I_EndDisplay(void)
 void I_uSleep(unsigned long usecs)
 {
 
-    SDL_Delay(usecs / 1000);
+    delay(usecs / 1000);
 
 }
 
 int I_GetTime(void)
 {
 
-    int t = SDL_GetTicks();
+    int t = millis();
     int i = t * (TICRATE / 5) / 200;
 
     ms_to_next_tick = (i + 1) * 200 / (TICRATE / 5) - t;
@@ -127,7 +132,7 @@ int I_GetTime(void)
 fixed_t I_GetTimeFrac(void)
 {
 
-    unsigned long now = SDL_GetTicks();
+    unsigned long now = millis();
     fixed_t frac;
 
     if (tic_vars.step == 0)
@@ -148,7 +153,7 @@ fixed_t I_GetTimeFrac(void)
 unsigned long I_GetRandomTimeSeed(void)
 {
 
-    return SDL_GetTicks();
+    return millis();
 
 }
 
@@ -229,7 +234,7 @@ char *I_FindFile(const char *wfname, const char *ext)
                 continue;
 
         }
-        
+
         else if (search[i].func)
         {
 
@@ -263,7 +268,7 @@ char *I_FindFile(const char *wfname, const char *ext)
 
 }
 
-int main(int argc, char **argv)
+void doom_start()
 {
 
     signal(SIGSEGV, handle_signal);
@@ -274,8 +279,6 @@ int main(int argc, char **argv)
     signal(SIGABRT, handle_signal);
     I_PreInitGraphics();
     D_DoomMain();
-
-    return 0;
 
 }
 

@@ -1,13 +1,13 @@
 #include <stdlib.h>
-#include "d_think.h"
-#include "doomdef.h"
-#include "m_fixed.h"
-#include "s_sound.h"
-#include "p_mobj.h"
-#include "p_enemy.h"
-#include "p_pspr.h"
-#include "w_wad.h"
-#include "info.h"
+#include "doom/d_think.h"
+#include "doom/doomdef.h"
+#include "doom/m_fixed.h"
+#include "doom/s_sound.h"
+#include "doom/p_mobj.h"
+#include "doom/p_enemy.h"
+#include "doom/p_pspr.h"
+#include "doom/w_wad.h"
+#include "doom/info.h"
 
 const char *sprnames[NUMSPRITES + 1] = {
     "TROO", "SHTG", "PUNG", "PISG", "PISF", "SHTF", "SHT2", "CHGG", "CHGF", "MISG",

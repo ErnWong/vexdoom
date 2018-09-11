@@ -1,8 +1,8 @@
 #ifndef __R_STATE__
 #define __R_STATE__
 
-#include "d_player.h"
-#include "r_data.h"
+#include "doom/d_player.h"
+#include "doom/r_data.h"
 
 extern fixed_t *textureheight;
 extern int firstflat, numflats;

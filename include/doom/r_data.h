@@ -1,9 +1,9 @@
 #ifndef __R_DATA__
 #define __R_DATA__
 
-#include "r_defs.h"
-#include "r_state.h"
-#include "r_patch.h"
+#include "doom/r_defs.h"
+#include "doom/r_state.h"
+#include "doom/r_patch.h"
 
 typedef struct
 {

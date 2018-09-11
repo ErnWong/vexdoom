@@ -1,7 +1,7 @@
 #ifndef __R_THINGS__
 #define __R_THINGS__
 
-#include "r_draw.h"
+#include "doom/r_draw.h"
 
 extern int negonearray[MAX_SCREENWIDTH];
 extern int screenheightarray[MAX_SCREENWIDTH];

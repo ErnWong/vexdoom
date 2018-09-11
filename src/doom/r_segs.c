@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include <string.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "r_main.h"
-#include "r_bsp.h"
-#include "r_segs.h"
-#include "r_plane.h"
-#include "r_things.h"
-#include "r_draw.h"
-#include "w_wad.h"
-#include "v_video.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/r_main.h"
+#include "doom/r_bsp.h"
+#include "doom/r_segs.h"
+#include "doom/r_plane.h"
+#include "doom/r_things.h"
+#include "doom/r_draw.h"
+#include "doom/w_wad.h"
+#include "doom/v_video.h"
 
 static boolean  segtextured;
 static boolean  markfloor;

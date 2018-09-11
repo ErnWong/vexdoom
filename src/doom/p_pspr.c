@@ -1,16 +1,16 @@
 #include <stdlib.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "r_main.h"
-#include "p_map.h"
-#include "p_inter.h"
-#include "p_pspr.h"
-#include "p_enemy.h"
-#include "m_random.h"
-#include "s_sound.h"
-#include "d_event.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/r_main.h"
+#include "doom/p_map.h"
+#include "doom/p_inter.h"
+#include "doom/p_pspr.h"
+#include "doom/p_enemy.h"
+#include "doom/m_random.h"
+#include "doom/s_sound.h"
+#include "doom/d_event.h"
 
 #define LOWERSPEED                      (FRACUNIT * 6)
 #define RAISESPEED                      (FRACUNIT * 6)

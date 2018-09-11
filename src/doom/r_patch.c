@@ -1,19 +1,19 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "z_zone.h"
-#include "doomstat.h"
-#include "w_wad.h"
-#include "r_main.h"
-#include "r_bsp.h"
-#include "r_things.h"
-#include "p_tick.h"
-#include "i_system.h"
-#include "r_draw.h"
-#include "r_patch.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/z_zone.h"
+#include "doom/doomstat.h"
+#include "doom/w_wad.h"
+#include "doom/r_main.h"
+#include "doom/r_bsp.h"
+#include "doom/r_things.h"
+#include "doom/p_tick.h"
+#include "doom/i_system.h"
+#include "doom/r_draw.h"
+#include "doom/r_patch.h"
 
 typedef struct
 {

@@ -2,17 +2,17 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "r_state.h"
-#include "s_sound.h"
-#include "d_englsh.h"
-#include "wi_stuff.h"
-#include "v_video.h"
-#include "i_video.h"
-#include "hu_stuff.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/r_state.h"
+#include "doom/s_sound.h"
+#include "doom/d_englsh.h"
+#include "doom/wi_stuff.h"
+#include "doom/v_video.h"
+#include "doom/i_video.h"
+#include "doom/hu_stuff.h"
 
 #define TEXTSPEED                       3
 #define TEXTWAIT                        250

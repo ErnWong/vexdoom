@@ -1,15 +1,15 @@
 #include <stdlib.h>
 #include <string.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "r_main.h"
-#include "r_bsp.h"
-#include "r_segs.h"
-#include "r_draw.h"
-#include "r_things.h"
-#include "z_zone.h"
-#include "i_system.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/r_main.h"
+#include "doom/r_bsp.h"
+#include "doom/r_segs.h"
+#include "doom/r_draw.h"
+#include "doom/r_things.h"
+#include "doom/z_zone.h"
+#include "doom/i_system.h"
 
 #define MINZ        (FRACUNIT*4)
 #define BASEYCENTER 100

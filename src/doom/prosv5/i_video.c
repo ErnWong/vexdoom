@@ -1,15 +1,15 @@
 #include <stdlib.h>
 #include <SDL.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "r_data.h"
-#include "r_draw.h"
-#include "v_video.h"
-#include "st_stuff.h"
-#include "i_system.h"
-#include "i_video.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/r_data.h"
+#include "doom/r_draw.h"
+#include "doom/v_video.h"
+#include "doom/st_stuff.h"
+#include "doom/i_system.h"
+#include "doom/i_video.h"
 
 #define NO_PALETTE_CHANGE 1000
 

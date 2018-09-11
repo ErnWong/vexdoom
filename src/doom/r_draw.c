@@ -1,19 +1,19 @@
 #include <stdlib.h>
 #include <string.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "w_wad.h"
-#include "r_main.h"
-#include "r_draw.h"
-#include "r_filter.h"
-#include "v_video.h"
-#include "st_stuff.h"
-#include "g_game.h"
-#include "z_zone.h"
-#include "i_system.h"
-#include "i_video.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/w_wad.h"
+#include "doom/r_main.h"
+#include "doom/r_draw.h"
+#include "doom/r_filter.h"
+#include "doom/v_video.h"
+#include "doom/st_stuff.h"
+#include "doom/g_game.h"
+#include "doom/z_zone.h"
+#include "doom/i_system.h"
+#include "doom/i_video.h"
 
 #define FUZZTABLE                       50
 #define FUZZOFF                         1
@@ -135,7 +135,7 @@ void R_ResetColumnBuffer(void)
 #define R_FLUSHWHOLE_FUNCNAME R_FlushWhole8
 #define R_FLUSHHEADTAIL_FUNCNAME R_FlushHT8
 #define R_FLUSHQUAD_FUNCNAME R_FlushQuad8
-#include "r_drawflush.inl"
+#include "doom/r_drawflush.inl"
 #undef R_DRAWCOLUMN_PIPELINE
 #undef R_FLUSHWHOLE_FUNCNAME
 #undef R_FLUSHHEADTAIL_FUNCNAME
@@ -145,7 +145,7 @@ void R_ResetColumnBuffer(void)
 #define R_FLUSHWHOLE_FUNCNAME R_FlushWholeFuzz8
 #define R_FLUSHHEADTAIL_FUNCNAME R_FlushHTFuzz8
 #define R_FLUSHQUAD_FUNCNAME R_FlushQuadFuzz8
-#include "r_drawflush.inl"
+#include "doom/r_drawflush.inl"
 #undef R_DRAWCOLUMN_PIPELINE
 #undef R_FLUSHWHOLE_FUNCNAME
 #undef R_FLUSHHEADTAIL_FUNCNAME
@@ -157,7 +157,7 @@ void R_ResetColumnBuffer(void)
 #define R_FLUSHWHOLE_FUNCNAME R_FlushWhole8
 #define R_FLUSHHEADTAIL_FUNCNAME R_FlushHT8
 #define R_FLUSHQUAD_FUNCNAME R_FlushQuad8
-#include "r_drawcolpipeline.inl"
+#include "doom/r_drawcolpipeline.inl"
 #undef R_FLUSHWHOLE_FUNCNAME
 #undef R_FLUSHHEADTAIL_FUNCNAME
 #undef R_FLUSHQUAD_FUNCNAME
@@ -171,7 +171,7 @@ void R_ResetColumnBuffer(void)
 #define R_FLUSHWHOLE_FUNCNAME R_FlushWhole8
 #define R_FLUSHHEADTAIL_FUNCNAME R_FlushHT8
 #define R_FLUSHQUAD_FUNCNAME R_FlushQuad8
-#include "r_drawcolpipeline.inl"
+#include "doom/r_drawcolpipeline.inl"
 #undef R_FLUSHWHOLE_FUNCNAME
 #undef R_FLUSHHEADTAIL_FUNCNAME
 #undef R_FLUSHQUAD_FUNCNAME
@@ -185,7 +185,7 @@ void R_ResetColumnBuffer(void)
 #define R_FLUSHWHOLE_FUNCNAME R_FlushWholeFuzz8
 #define R_FLUSHHEADTAIL_FUNCNAME R_FlushHTFuzz8
 #define R_FLUSHQUAD_FUNCNAME R_FlushQuadFuzz8
-#include "r_drawcolpipeline.inl"
+#include "doom/r_drawcolpipeline.inl"
 #undef R_FLUSHWHOLE_FUNCNAME
 #undef R_FLUSHHEADTAIL_FUNCNAME
 #undef R_FLUSHQUAD_FUNCNAME
@@ -276,37 +276,37 @@ void R_InitTranslationTables(void)
 
 #define R_DRAWSPAN_FUNCNAME R_DrawSpan8_PointUV_PointZ
 #define R_DRAWSPAN_PIPELINE (RDC_STANDARD)
-#include "r_drawspan.inl"
+#include "doom/r_drawspan.inl"
 #undef R_DRAWSPAN_PIPELINE
 #undef R_DRAWSPAN_FUNCNAME
 
 #define R_DRAWSPAN_FUNCNAME R_DrawSpan8_PointUV_LinearZ
 #define R_DRAWSPAN_PIPELINE (RDC_STANDARD | RDC_DITHERZ)
-#include "r_drawspan.inl"
+#include "doom/r_drawspan.inl"
 #undef R_DRAWSPAN_PIPELINE
 #undef R_DRAWSPAN_FUNCNAME
 
 #define R_DRAWSPAN_FUNCNAME R_DrawSpan8_LinearUV_PointZ
 #define R_DRAWSPAN_PIPELINE (RDC_STANDARD | RDC_BILINEAR)
-#include "r_drawspan.inl"
+#include "doom/r_drawspan.inl"
 #undef R_DRAWSPAN_PIPELINE
 #undef R_DRAWSPAN_FUNCNAME
 
 #define R_DRAWSPAN_FUNCNAME R_DrawSpan8_LinearUV_LinearZ
 #define R_DRAWSPAN_PIPELINE (RDC_STANDARD | RDC_BILINEAR | RDC_DITHERZ)
-#include "r_drawspan.inl"
+#include "doom/r_drawspan.inl"
 #undef R_DRAWSPAN_PIPELINE
 #undef R_DRAWSPAN_FUNCNAME
 
 #define R_DRAWSPAN_FUNCNAME R_DrawSpan8_RoundedUV_PointZ
 #define R_DRAWSPAN_PIPELINE (RDC_STANDARD | RDC_ROUNDED)
-#include "r_drawspan.inl"
+#include "doom/r_drawspan.inl"
 #undef R_DRAWSPAN_PIPELINE
 #undef R_DRAWSPAN_FUNCNAME
 
 #define R_DRAWSPAN_FUNCNAME R_DrawSpan8_RoundedUV_LinearZ
 #define R_DRAWSPAN_PIPELINE (RDC_STANDARD | RDC_ROUNDED | RDC_DITHERZ)
-#include "r_drawspan.inl"
+#include "doom/r_drawspan.inl"
 #undef R_DRAWSPAN_PIPELINE
 #undef R_DRAWSPAN_FUNCNAME
 

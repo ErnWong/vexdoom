@@ -1,8 +1,8 @@
 #ifndef __P_SPEC__
 #define __P_SPEC__
 
-#include "r_defs.h"
-#include "d_player.h"
+#include "doom/r_defs.h"
+#include "doom/d_player.h"
 
 #define MO_TELEPORTMAN                  14
 #define ELEVATORSPEED                   (FRACUNIT * 4)

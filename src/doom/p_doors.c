@@ -1,16 +1,16 @@
 #include <stdlib.h>
 #include <string.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "p_spec.h"
-#include "p_tick.h"
-#include "s_sound.h"
-#include "r_main.h"
-#include "d_englsh.h"
-#include "z_zone.h"
-#include "i_system.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/p_spec.h"
+#include "doom/p_tick.h"
+#include "doom/s_sound.h"
+#include "doom/r_main.h"
+#include "doom/d_englsh.h"
+#include "doom/z_zone.h"
+#include "doom/i_system.h"
 
 void T_VerticalDoor(vldoor_t *door)
 {

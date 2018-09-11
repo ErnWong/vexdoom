@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "m_random.h"
+#include "doom/m_random.h"
 
 static const unsigned char rndtable[256] = {
     0, 8, 109, 220, 222, 241, 149, 107, 75, 248, 254, 140, 16, 66, 74, 21,

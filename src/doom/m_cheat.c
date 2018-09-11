@@ -1,19 +1,19 @@
 #include <stdlib.h>
 #include <ctype.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "g_game.h"
-#include "r_data.h"
-#include "p_inter.h"
-#include "p_tick.h"
-#include "m_cheat.h"
-#include "s_sound.h"
-#include "d_englsh.h"
-#include "r_main.h"
-#include "p_map.h"
-#include "p_tick.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/g_game.h"
+#include "doom/r_data.h"
+#include "doom/p_inter.h"
+#include "doom/p_tick.h"
+#include "doom/m_cheat.h"
+#include "doom/s_sound.h"
+#include "doom/d_englsh.h"
+#include "doom/r_main.h"
+#include "doom/p_map.h"
+#include "doom/p_tick.h"
 
 #define CHEAT_ARGS_MAX                  8
 #define plyr                            (players + consoleplayer)

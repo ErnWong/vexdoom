@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include <string.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "r_main.h"
-#include "r_draw.h"
-#include "r_filter.h"
-#include "v_video.h"
-#include "i_system.h"
-#include "i_video.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/r_main.h"
+#include "doom/r_draw.h"
+#include "doom/r_filter.h"
+#include "doom/v_video.h"
+#include "doom/i_system.h"
+#include "doom/i_video.h"
 
 screeninfo_t screens[NUM_SCREENS];
 

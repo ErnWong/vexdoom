@@ -1,8 +1,8 @@
 #ifndef __D_PLAYER__
 #define __D_PLAYER__
 
-#include "p_mobj.h"
-#include "d_main.h"
+#include "doom/p_mobj.h"
+#include "doom/d_main.h"
 
 typedef enum
 {

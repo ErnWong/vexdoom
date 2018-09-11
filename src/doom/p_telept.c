@@ -1,16 +1,16 @@
 #include <stdlib.h>
 #include <string.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "p_spec.h"
-#include "p_maputl.h"
-#include "p_map.h"
-#include "r_main.h"
-#include "p_tick.h"
-#include "s_sound.h"
-#include "p_user.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/p_spec.h"
+#include "doom/p_maputl.h"
+#include "doom/p_map.h"
+#include "doom/r_main.h"
+#include "doom/p_tick.h"
+#include "doom/s_sound.h"
+#include "doom/p_user.h"
 
 static mobj_t* P_TeleportDestination(line_t* line)
 {

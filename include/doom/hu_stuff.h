@@ -1,7 +1,7 @@
 #ifndef __HU_STUFF_H__
 #define __HU_STUFF_H__
 
-#include "r_defs.h"
+#include "doom/r_defs.h"
 
 #define HU_FONTSTART                    '!'
 #define HU_FONTEND                      0x7f

@@ -1,13 +1,13 @@
 #include <stdlib.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "d_event.h"
-#include "r_main.h"
-#include "p_map.h"
-#include "p_spec.h"
-#include "p_user.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/d_event.h"
+#include "doom/r_main.h"
+#include "doom/p_map.h"
+#include "doom/p_spec.h"
+#include "doom/p_user.h"
 
 #define INVERSECOLORMAP                 32
 #define MAXBOB                          0x100000

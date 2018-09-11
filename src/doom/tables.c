@@ -1,6 +1,6 @@
 #include <stddef.h>
-#include "w_wad.h"
-#include "tables.h"
+#include "doom/w_wad.h"
+#include "doom/tables.h"
 
 const fixed_t *finesine;
 const fixed_t *finecosine;

@@ -1,11 +1,11 @@
 #include <math.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "s_sound.h"
-#include "i_system.h"
-#include "i_sound.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/s_sound.h"
+#include "doom/i_system.h"
+#include "doom/i_sound.h"
 
 int snd_card = 1;
 int mus_card = 0;

@@ -1,12 +1,12 @@
 #include <stdlib.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "r_main.h"
-#include "p_maputl.h"
-#include "p_map.h"
-#include "p_setup.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/r_main.h"
+#include "doom/p_maputl.h"
+#include "doom/p_map.h"
+#include "doom/p_setup.h"
 
 static size_t num_intercepts;
 static intercept_t *intercepts, *intercept_p;

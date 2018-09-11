@@ -1,22 +1,22 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "d_main.h"
-#include "w_wad.h"
-#include "r_main.h"
-#include "r_things.h"
-#include "r_plane.h"
-#include "r_bsp.h"
-#include "r_draw.h"
-#include "v_video.h"
-#include "st_stuff.h"
-#include "i_system.h"
-#include "i_video.h"
-#include "g_game.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/d_main.h"
+#include "doom/w_wad.h"
+#include "doom/r_main.h"
+#include "doom/r_things.h"
+#include "doom/r_plane.h"
+#include "doom/r_bsp.h"
+#include "doom/r_draw.h"
+#include "doom/v_video.h"
+#include "doom/st_stuff.h"
+#include "doom/i_system.h"
+#include "doom/i_video.h"
+#include "doom/g_game.h"
 
 #define FIELDOFVIEW                     2048
 #define KEEPTIMES                       10

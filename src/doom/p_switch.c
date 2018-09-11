@@ -1,14 +1,14 @@
 #include <stdlib.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "w_wad.h"
-#include "r_main.h"
-#include "p_spec.h"
-#include "g_game.h"
-#include "s_sound.h"
-#include "i_system.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/w_wad.h"
+#include "doom/r_main.h"
+#include "doom/p_spec.h"
+#include "doom/g_game.h"
+#include "doom/s_sound.h"
+#include "doom/i_system.h"
 
 static int *switchlist;
 static int max_numswitches;

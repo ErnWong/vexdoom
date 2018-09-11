@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "m_fixed.h"
-#include "z_zone.h"
-#include "i_system.h"
+#include "doom/m_fixed.h"
+#include "doom/z_zone.h"
+#include "doom/i_system.h"
 
 #define CACHE_ALIGN                     32
 #define CHUNK_SIZE                      32

@@ -2,20 +2,20 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "hu_stuff.h"
-#include "st_stuff.h"
-#include "w_wad.h"
-#include "d_englsh.h"
-#include "s_sound.h"
-#include "g_game.h"
-#include "r_main.h"
-#include "r_draw.h"
-#include "v_video.h"
-#include "i_video.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/hu_stuff.h"
+#include "doom/st_stuff.h"
+#include "doom/w_wad.h"
+#include "doom/d_englsh.h"
+#include "doom/s_sound.h"
+#include "doom/g_game.h"
+#include "doom/r_main.h"
+#include "doom/r_draw.h"
+#include "doom/v_video.h"
+#include "doom/i_video.h"
 
 const char *const mapnames[] = {
     HUSTR_E1M1,

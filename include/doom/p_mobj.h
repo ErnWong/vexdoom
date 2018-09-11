@@ -1,9 +1,9 @@
 #ifndef __P_MOBJ__
 #define __P_MOBJ__
 
-#include "tables.h"
-#include "m_fixed.h"
-#include "info.h"
+#include "doom/tables.h"
+#include "doom/m_fixed.h"
+#include "doom/info.h"
 
 #define NF_SUBSECTOR                    0x8000
 #define NO_INDEX                        ((unsigned short)-1)

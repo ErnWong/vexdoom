@@ -1,5 +1,5 @@
-#include "doomtype.h"
-#include "r_filter.h"
+#include "doom/doomtype.h"
+#include "doom/r_filter.h"
 
 #define DMR                             16
 

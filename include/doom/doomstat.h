@@ -1,7 +1,7 @@
 #ifndef __D_STATE__
 #define __D_STATE__
 
-#include "d_player.h"
+#include "doom/d_player.h"
 
 #define BACKUPTICS                      12
 

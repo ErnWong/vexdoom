@@ -1,16 +1,16 @@
 #include <stdio.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "hu_stuff.h"
-#include "g_game.h"
-#include "s_sound.h"
-#include "m_menu.h"
-#include "v_video.h"
-#include "i_system.h"
-#include "i_video.h"
-#include "i_sound.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/hu_stuff.h"
+#include "doom/g_game.h"
+#include "doom/s_sound.h"
+#include "doom/m_menu.h"
+#include "doom/v_video.h"
+#include "doom/i_system.h"
+#include "doom/i_video.h"
+#include "doom/i_sound.h"
 
 extern patchnum_t hu_font[HU_FONTSIZE];
 int mouseSensitivity_horiz;

@@ -1,7 +1,7 @@
 #ifndef __M_FIXED__
 #define __M_FIXED__
 
-#include "doomtype.h"
+#include "doom/doomtype.h"
 
 #define FRACBITS 16
 #define FRACUNIT (1 << FRACBITS)

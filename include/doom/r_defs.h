@@ -1,9 +1,9 @@
 #ifndef __R_DEFS__
 #define __R_DEFS__
 
-#include "doomdef.h"
-#include "m_fixed.h"
-#include "p_mobj.h"
+#include "doom/doomdef.h"
+#include "doom/m_fixed.h"
+#include "doom/p_mobj.h"
 
 #define SIL_NONE                        0
 #define SIL_BOTTOM                      1

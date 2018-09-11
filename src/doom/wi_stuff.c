@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "g_game.h"
-#include "m_random.h"
-#include "r_main.h"
-#include "v_video.h"
-#include "wi_stuff.h"
-#include "s_sound.h"
-#include "i_system.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/g_game.h"
+#include "doom/m_random.h"
+#include "doom/r_main.h"
+#include "doom/v_video.h"
+#include "doom/wi_stuff.h"
+#include "doom/s_sound.h"
+#include "doom/i_system.h"
 
 #define NUMEPISODES                     4
 #define NUMMAPS                         9

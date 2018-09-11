@@ -1,13 +1,13 @@
 #include <stdlib.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "p_user.h"
-#include "p_spec.h"
-#include "p_tick.h"
-#include "p_map.h"
-#include "z_zone.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/p_user.h"
+#include "doom/p_spec.h"
+#include "doom/p_tick.h"
+#include "doom/p_map.h"
+#include "doom/z_zone.h"
 
 int leveltime;
 

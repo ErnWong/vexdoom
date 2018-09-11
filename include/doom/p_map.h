@@ -1,8 +1,8 @@
 #ifndef __P_MAP__
 #define __P_MAP__
 
-#include "r_defs.h"
-#include "d_player.h"
+#include "doom/r_defs.h"
+#include "doom/d_player.h"
 
 #define USERANGE                        (64 * FRACUNIT)
 #define MELEERANGE                      (64 * FRACUNIT)

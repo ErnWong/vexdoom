@@ -1,8 +1,8 @@
 #ifndef __D_MAIN__
 #define __D_MAIN__
 
-#include "d_event.h"
-#include "w_wad.h"
+#include "doom/d_event.h"
+#include "doom/w_wad.h"
 
 typedef struct
 {

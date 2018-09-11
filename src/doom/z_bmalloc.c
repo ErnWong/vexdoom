@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <string.h>
-#include "m_fixed.h"
-#include "z_zone.h"
-#include "z_bmalloc.h"
-#include "i_system.h"
+#include "doom/m_fixed.h"
+#include "doom/z_zone.h"
+#include "doom/z_bmalloc.h"
+#include "doom/i_system.h"
 
 enum
 {

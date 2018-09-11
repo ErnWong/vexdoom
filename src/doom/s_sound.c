@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "doomdef.h"
-#include "d_think.h"
-#include "p_pspr.h"
-#include "doomstat.h"
-#include "m_random.h"
-#include "r_main.h"
-#include "s_sound.h"
-#include "i_system.h"
-#include "i_sound.h"
+#include "doom/doomdef.h"
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
+#include "doom/doomstat.h"
+#include "doom/m_random.h"
+#include "doom/r_main.h"
+#include "doom/s_sound.h"
+#include "doom/i_system.h"
+#include "doom/i_sound.h"
 
 #define S_CLIPPING_DIST                 (1200 << FRACBITS)
 #define S_CLOSE_DIST                    (160 << FRACBITS)

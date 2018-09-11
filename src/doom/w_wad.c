@@ -2,10 +2,10 @@
 #include <string.h>
 #include <ctype.h>
 #include <fcntl.h>
-#include "m_fixed.h"
-#include "z_zone.h"
-#include "w_wad.h"
-#include "i_system.h"
+#include "doom/m_fixed.h"
+#include "doom/z_zone.h"
+#include "doom/w_wad.h"
+#include "doom/i_system.h"
 
 lumpinfo_t *lumpinfo;
 int numlumps;

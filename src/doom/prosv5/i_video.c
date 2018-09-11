@@ -42,9 +42,47 @@ static boolean skipframe(void)
 
 }
 
+bool prev_key[1024];
+
+void check_key(char name, controller_digital_e_t v5type, int doomtype)
+{
+    bool new_state = controller_get_digital(E_CONTROLLER_MASTER, v5type);
+    if (prev_key[doomtype] != new_state)
+    {
+        event_t event;
+        event.type = new_state ? ev_keydown : ev_keyup;
+        event.data1 = doomtype;
+        D_PostEvent(&event);
+    }
+    prev_key[doomtype] = new_state;
+}
+
+void update_joysticks()
+{
+    event_t event;
+    event.type = ev_mouse;
+    event.data2 = 8*controller_get_analog(E_CONTROLLER_MASTER, E_CONTROLLER_ANALOG_LEFT_X);
+    event.data3 = controller_get_analog(E_CONTROLLER_MASTER, E_CONTROLLER_ANALOG_LEFT_Y);
+    D_PostEvent(&event);
+}
+
 void I_StartTic(void)
 {
-    // Noop.
+
+    check_key('u', E_CONTROLLER_DIGITAL_UP, KEYD_UPARROW);
+    check_key('d', E_CONTROLLER_DIGITAL_DOWN, KEYD_DOWNARROW);
+    check_key('l', E_CONTROLLER_DIGITAL_LEFT, KEYD_LEFTARROW);
+    check_key('r', E_CONTROLLER_DIGITAL_RIGHT, KEYD_RIGHTARROW);
+    check_key('x', E_CONTROLLER_DIGITAL_X, KEYD_ESCAPE); // Open menu
+    check_key('y', E_CONTROLLER_DIGITAL_Y, KEYD_TAB); // Open map - not supported
+    check_key('a', E_CONTROLLER_DIGITAL_A, KEYD_ENTER); // Select in menu
+    check_key('r', E_CONTROLLER_DIGITAL_B, '0'); // Switch weapons
+    check_key('s', E_CONTROLLER_DIGITAL_L1, KEYD_RALT); // Strafe
+    check_key('S', E_CONTROLLER_DIGITAL_L2, KEYD_SPACEBAR); // Use
+    check_key('R', E_CONTROLLER_DIGITAL_R2, KEYD_RSHIFT); // Run
+    check_key('r', E_CONTROLLER_DIGITAL_R1, KEYD_RCTRL); // Shoot
+    update_joysticks();
+
 }
 
 void I_FinishUpdate(void)

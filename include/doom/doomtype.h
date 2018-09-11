@@ -1,7 +1,9 @@
 #ifndef __DOOMTYPE__
 #define __DOOMTYPE__
 
-typedef enum {false, true} boolean;
+#include <stdbool.h>
+// Caution! Doom code assumes boolean has width of an int.
+typedef int boolean;
 typedef unsigned char byte;
 
 #ifndef MAX

@@ -242,10 +242,10 @@ static void CheckIWAD(const char *iwadname, GameMode_t *gmode, boolean *hassec)
     size_t length;
     filelump_t *fileinfo;
 
-    if (!(fp = fopen(iwadname, "rb")))
+    if (!(fp = I_FOpen(iwadname, "rb")))
         I_Error("CheckIWAD: could not open %s", iwadname);
 
-    if (fread(&header, sizeof (header), 1, fp) != 1)
+    if (I_FRead(&header, sizeof (header), 1, fp) != 1)
         I_Error("CheckIWAD: could not read %s", iwadname);
 
     if (!(strncmp(header.identification, "IWAD", 4) == 0 || strncmp(header.identification, "PWAD", 4) == 0))
@@ -256,13 +256,13 @@ static void CheckIWAD(const char *iwadname, GameMode_t *gmode, boolean *hassec)
     length = header.numlumps;
     fileinfo = malloc(length * sizeof (filelump_t));
 
-    if (fseek(fp, header.infotableofs, SEEK_SET))
+    if (I_FSeek(fp, header.infotableofs, SEEK_SET))
         I_Error("CheckIWAD: failed to seek");
 
-    if (fread(fileinfo, sizeof (filelump_t), length, fp) != length)
+    if (I_FRead(fileinfo, sizeof (filelump_t), length, fp) != length)
         I_Error("CheckIWAD: failed to read");
 
-    fclose(fp);
+    I_FClose(fp);
 
     while (length--)
     {

@@ -129,7 +129,7 @@ static void W_AddFile(wadfile_info_t *wadfile)
         length = header.numlumps * sizeof(filelump_t);
         fileinfo2free = fileinfo = malloc(length);
 
-        lseek(wadfile->handle, header.infotableofs, SEEK_SET);
+        I_LSeek(wadfile->handle, header.infotableofs, SEEK_SET);
         I_Read(wadfile->handle, fileinfo, length);
 
         numlumps += header.numlumps;
@@ -335,7 +335,7 @@ void W_ReadLump(int lump, void *dest)
     if (l->wadfile)
     {
 
-        lseek(l->wadfile->handle, l->position, SEEK_SET);
+        I_LSeek(l->wadfile->handle, l->position, SEEK_SET);
         I_Read(l->wadfile->handle, dest, l->size);
 
     }

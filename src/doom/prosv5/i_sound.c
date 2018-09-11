@@ -7,9 +7,30 @@
 #include "doom/i_system.h"
 #include "doom/i_sound.h"
 
+#include "api.h"
+
 int snd_card = 1;
 int mus_card = 0;
 int snd_samplerate = 11025;
+
+task_t clicker_task;
+
+void clicker_click()
+{
+    motor_set_brake_mode(3, E_MOTOR_BRAKE_BRAKE);
+    motor_move_voltage(3, 12000);
+    delay(80);
+    motor_move_voltage(3, 0);
+}
+
+void clicker_run(void *unused)
+{
+    while (true)
+    {
+        task_notify_take(true, TIMEOUT_MAX);
+        clicker_click();
+    }
+}
 
 void I_UpdateSoundParams(int handle, int volume, int seperation, int pitch)
 {
@@ -23,7 +44,10 @@ void I_SetChannels(void)
 
 int I_StartSound(int id, int channel, int vol, int sep, int pitch, int priority)
 {
-    // Noop.
+
+    task_notify(clicker_task);
+    return -1;
+
 }
 
 void I_StopSound(int handle)
@@ -47,7 +71,10 @@ boolean I_AnySoundStillPlaying(void)
 
 void I_InitSound(void)
 {
-    // Noop.
+
+    clicker_task = task_create(clicker_run, NULL,
+            TASK_PRIORITY_DEFAULT, TASK_STACK_DEPTH_DEFAULT, NULL);
+
 }
 
 void I_ShutdownMusic(void)

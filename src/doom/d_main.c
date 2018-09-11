@@ -124,7 +124,7 @@ static void D_Display(void)
         }
 
     }
-    
+
     else if (gametic != basetic)
     {
 
@@ -164,7 +164,7 @@ static void tryruntics(void)
         {
 
             M_Ticker();
-                
+
             return;
 
         }

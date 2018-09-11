@@ -112,19 +112,19 @@ static int dclicks2;
 static buttoncode_t special_event;
 int defaultskill;
 
-static inline char fudgef(char b)
+static inline signed char fudgef(char b)
 {
 
     static int c;
 
     if (!b)
         return b;
-        
+
     if (++c & 0x1f)
         return b;
 
     b |= 1;
-    
+
     if (b > 2)
         b -= 2;
 
@@ -139,7 +139,7 @@ static inline short fudgea(short b)
         return b;
 
     b |= 1;
-    
+
     if (b > 2)
         b -= 2;
 

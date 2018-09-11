@@ -33,7 +33,7 @@ typedef struct
 
 typedef struct
 {
-  char istexture;
+  signed char istexture; // signed because use of -1 as terminator.
   char endname[9];
   char startname[9];
   int speed;
@@ -45,7 +45,7 @@ animdef_t animdefs[] = {
     {false, "SWATER4", "SWATER1",  8},
     {false, "LAVA4", "LAVA1", 8},
     {false, "BLOOD3", "BLOOD1", 8},
-    {false, "RROCK08", "RROCK05", 8},  
+    {false, "RROCK08", "RROCK05", 8},
     {false, "SLIME04", "SLIME01", 8},
     {false, "SLIME08", "SLIME05", 8},
     {false, "SLIME12", "SLIME09", 8},

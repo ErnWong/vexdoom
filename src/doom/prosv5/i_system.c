@@ -166,6 +166,7 @@ void doom_start()
     signal(SIGILL, handle_signal);
     signal(SIGINT, handle_signal);
     signal(SIGABRT, handle_signal);
+    I_InitFS();
     I_PreInitGraphics();
     D_DoomMain();
 

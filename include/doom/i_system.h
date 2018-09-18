@@ -37,6 +37,7 @@ int I_FClose(FILE *file);
 void I_Read(int fd, void *buf, size_t sz);
 size_t I_FRead(void *buf, size_t sz, size_t count, FILE * file);
 int I_Filelength(int handle);
+void I_InitFS();
 void doom_start();
 
 extern int ms_to_next_tick;

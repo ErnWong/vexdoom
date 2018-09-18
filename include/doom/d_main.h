@@ -7,8 +7,8 @@
 typedef struct
 {
 
-    char forwardmove;
-    char sidemove;
+    signed char forwardmove;
+    signed char sidemove;
     short angleturn;
     byte buttons;
 

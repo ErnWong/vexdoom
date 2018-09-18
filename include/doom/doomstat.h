@@ -1,6 +1,8 @@
 #ifndef __D_STATE__
 #define __D_STATE__
 
+#include "doom/d_think.h"
+#include "doom/p_pspr.h"
 #include "doom/d_player.h"
 
 #define BACKUPTICS                      12

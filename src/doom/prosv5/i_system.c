@@ -11,6 +11,7 @@
 #include "api.h"
 #include "doom/doomtype.h"
 #include "doom/doomdef.h"
+#include "doom/doomstat.h"
 #include "doom/m_fixed.h"
 #include "doom/d_main.h"
 #include "doom/i_video.h"
@@ -49,6 +50,12 @@ void I_Init(void)
 
 void I_Exit(int rc)
 {
+
+    if(rc == 0)
+    {
+        players[consoleplayer].message = "Ha Nice Try";
+        return;
+    }
 
     printf("[INFO ] Program has terminated.\n");
     while (true)

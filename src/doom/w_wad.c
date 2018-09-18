@@ -78,7 +78,7 @@ static void ExtractFileBase(const char *path, char *dest)
 
 }
 
-static void W_AddFile(wadfile_info_t *wadfile) 
+static void W_AddFile(wadfile_info_t *wadfile)
 {
 
     wadinfo_t header;
@@ -89,9 +89,9 @@ static void W_AddFile(wadfile_info_t *wadfile)
     filelump_t *fileinfo, *fileinfo2free = NULL;
     filelump_t singleinfo;
 
-    wadfile->handle = open(wadfile->name, O_RDONLY);
+    wadfile->handle = I_Open(wadfile->name, O_RDONLY);
 
-    if (wadfile->handle == -1) 
+    if (wadfile->handle == -1)
     {
 
         if (strlen(wadfile->name) <= 4 || (strcasecmp(wadfile->name + strlen(wadfile->name) - 4, ".lmp") && strcasecmp(wadfile->name + strlen(wadfile->name) - 4, ".gwa")))

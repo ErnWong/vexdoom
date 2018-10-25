@@ -24,7 +24,6 @@ cp /whatever/your/path/is/to/doom1.wad ./res
       sudo apt install build-essentials
       ./tools/genwadfiles.sh
       ```
-    - If you're on Windows, cry.
     - If you're on Windows, install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and do step 4 like you're on linux.
 5. Compile
 ```sh

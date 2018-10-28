@@ -6,6 +6,8 @@
 
 ![Teaser Photo](docs/images/lo-res-teaser.png)
 
+(By the way, also checkout [Jackson Seal's DOOM port](https://github.com/sealj553/VexV5Doom))
+
 ## Installation
 
 1. Make sure you have [PROS for V5 installed](https://pros.cs.purdue.edu/v5/getting-started/index.html).
